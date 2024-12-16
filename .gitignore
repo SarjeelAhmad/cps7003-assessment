@@ -1,0 +1,37 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.env/
+
+# SQLite database
+*.db
+
+# Draw.io files
+*.drawio.bak
+
+# Logs
+*.log
+*.out
+
+# PyCharm IDE files
+.idea/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Python cache and debug files
+*.pytest_cache/
+.coverage
+*.tmp
+debug.log
+
+# Test results
+htmlcov/
+
+# Documentation
+*.pdf~
