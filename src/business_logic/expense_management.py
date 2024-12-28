@@ -1,6 +1,6 @@
 # expense_management.py
 from sqlalchemy.orm import Session
-from database.models import Expense
+from src.database.models import Expense
 
 def create_expense(db: Session, date, amount, category, description, user_id):
     """Creates a new expense entry in the database."""

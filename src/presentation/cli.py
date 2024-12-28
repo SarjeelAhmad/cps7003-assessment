@@ -2,14 +2,14 @@
 import sys
 from datetime import datetime
 from sqlalchemy.orm import sessionmaker
-from database.database_config import engine, init_db
-from business_logic.user_management import create_user, get_user, update_user, delete_user
-from business_logic.expense_management import create_expense, get_expenses, delete_expense, update_expense
-from business_logic.inventory_management import add_inventory_item, get_inventory_items, delete_inventory_item, \
+from src.database.database_config import engine, init_db
+from src.business_logic.user_management import create_user, get_user, update_user, delete_user
+from src.business_logic.expense_management import create_expense, get_expenses, delete_expense, update_expense
+from src.business_logic.inventory_management import add_inventory_item, get_inventory_items, delete_inventory_item, \
     update_inventory_item
-from business_logic.sales_tracking import record_sale, get_sales, delete_sale, update_sale
-from business_logic.reporting import generate_financial_summary
-from utils.authentication import authenticate_user
+from src.business_logic.sales_tracking import record_sale, get_sales, delete_sale, update_sale
+from src.business_logic.reporting import generate_financial_summary
+from src.utils.authentication import authenticate_user
 
 # Initialize the database
 init_db()

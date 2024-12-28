@@ -1,6 +1,6 @@
 # sales_tracking.py
 from sqlalchemy.orm import Session
-from database.models import Sale
+from src.database.models import Sale
 
 def record_sale(db: Session, date, amount, items_sold, user_id) -> Sale:
     """Records a new sale entry in the database."""

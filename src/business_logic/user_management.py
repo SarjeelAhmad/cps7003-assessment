@@ -1,7 +1,7 @@
 # user_management.py
 from sqlalchemy.orm import Session
-from database.models import User
-from utils.encryption import hash_password
+from src.database.models import User
+from src.utils.encryption import hash_password
 
 def create_user(db: Session, username: str, password: str, email: str):
     hashed_password = hash_password(password)
