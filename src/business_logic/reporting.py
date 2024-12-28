@@ -1,7 +1,7 @@
 # reporting.py
 from sqlalchemy.orm import Session
 from sqlalchemy import func
-from database.models import Expense, Inventory, Sale
+from src.database.models import Expense, Inventory, Sale
 
 def generate_expense_report(db: Session, user_id: int):
     total_expenses = db.query(func.sum(Expense.amount)).filter(Expense.user_id == user_id).scalar()

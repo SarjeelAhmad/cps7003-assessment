@@ -1,6 +1,6 @@
 # inventory_management.py
 from sqlalchemy.orm import Session
-from database.models import Inventory
+from src.database.models import Inventory
 
 def add_inventory_item(db: Session, item_name: str, quantity: int, cost: float):
     new_item = Inventory(item_name=item_name, quantity=quantity, cost=cost)

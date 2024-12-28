@@ -1,7 +1,7 @@
 # authentication.py
 from sqlalchemy.orm import Session
-from database.models import User
-from utils.encryption import verify_password
+from src.database.models import User
+from src.utils.encryption import verify_password
 
 def authenticate_user(db: Session, username: str, password: str) -> User:
     """Authenticates a user by their username and password."""

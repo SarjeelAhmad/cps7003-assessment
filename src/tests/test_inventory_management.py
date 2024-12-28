@@ -2,8 +2,8 @@
 import unittest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from database.models import Base, Inventory
-from business_logic.inventory_management import add_inventory_item, get_inventory_items, update_inventory_item, \
+from src.database.models import Base, Inventory
+from src.business_logic.inventory_management import add_inventory_item, get_inventory_items, update_inventory_item, \
     delete_inventory_item
 
 

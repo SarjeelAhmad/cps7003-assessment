@@ -3,11 +3,11 @@ import unittest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from datetime import datetime
-from database.models import Base, Expense, Sale, User
-from business_logic.reporting import generate_financial_summary
-from business_logic.user_management import create_user
-from business_logic.expense_management import create_expense
-from business_logic.sales_tracking import record_sale
+from src.database.models import Base, Expense, Sale, User
+from src.business_logic.reporting import generate_financial_summary
+from src.business_logic.user_management import create_user
+from src.business_logic.expense_management import create_expense
+from src.business_logic.sales_tracking import record_sale
 
 
 class TestReporting(unittest.TestCase):

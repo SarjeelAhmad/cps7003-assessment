@@ -1,11 +1,9 @@
 # test_user_management.py
 import unittest
 from sqlalchemy import create_engine
-from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from database.models import Base, User
-from business_logic.user_management import create_user, get_user, update_user, delete_user
-from database.models import Base
+from src.business_logic.user_management import create_user, get_user, update_user, delete_user
+from src.database.models import Base
 
 
 class TestUserManagement(unittest.TestCase):

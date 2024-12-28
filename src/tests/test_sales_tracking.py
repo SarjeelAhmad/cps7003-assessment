@@ -3,9 +3,9 @@ import unittest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from datetime import datetime
-from database.models import Base, Sale, User
-from business_logic.sales_tracking import record_sale, get_sales, update_sale, delete_sale
-from business_logic.user_management import create_user
+from src.database.models import Base, Sale, User
+from src.business_logic.sales_tracking import record_sale, get_sales, update_sale, delete_sale
+from src.business_logic.user_management import create_user
 
 
 class TestSalesTracking(unittest.TestCase):
